@@ -427,7 +427,7 @@ export default {
       newElement.appendChild(this.htmlToElement(html))
       newElement.appendChild(document.createTextNode(' '))
       newElement.setAttribute('data-at-embedded', '')
-      newElement.setAttribute("contenteditable", false)
+      newElement.setAttribute("contenteditable", true)
 
       if (node.nodeType === Node.TEXT_NODE) {
         const cut = r.endOffset
